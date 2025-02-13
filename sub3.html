@@ -12,8 +12,9 @@
   width: 20%;
   text-align: left;
 }
+
 .footer {
-  position: fixed;
+  position: relative; /* Changed from fixed to relative */
   bottom: 0;
   left: 0;
   width: 100%;
@@ -23,7 +24,6 @@
 }
 
 .pagination a {
-  position: right;
   color: black;
   display: inline-block;
   padding: 8px 16px;
@@ -38,8 +38,9 @@
   margin-top: 20px;
 }
 
-.pagination a:hover:not(.active) {background-color: #ddd;} 
-
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
 
 .menu a {
   background-color: #6ac5fe;
@@ -54,16 +55,7 @@
   float: left;
   width: 60%;
   padding: 0 5px;
-}
-
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #6ac5fe;
-  text-align: center;
-  padding: 10px;
+  margin-bottom: 50px; /* Added margin to prevent overlap with footer */
 }
 
 table {
@@ -87,17 +79,18 @@ tr:nth-child(even) {
   float: left;
   width: 20%;
   padding: 0 10px;
-  color:#000000;
+  color: #000000;
   margin-top: 7px;
   text-align: left;
 }
 
-media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   /* For tablets: */
   .menu, .main, .right {
     width: 50%;
   }
 }
+
 @media only screen and (max-width: 600px) {
   /* For mobile phones: */
   .menu, .main, .right {
@@ -133,48 +126,47 @@ media only screen and (max-width: 900px) {
         </tr>
         <tr>
           <td>CSIT 4</td>
-          <td>DATA STRUCTURES AND ALGORITHMS </td>
+          <td>DATA STRUCTURES AND ALGORITHMS</td>
           <td>3.0</td>
         </tr>
         <tr>
           <td>ITP 3</td>
-          <td>NETWORKING 1 (CISCO 1: NETWORKING BASICS) </td>
+          <td>NETWORKING 1 (CISCO 1: NETWORKING BASICS)</td>
           <td>3.0</td>
         </tr>
         <tr>
           <td>ITEL 1A</td>
-          <td>IT ELECTIVE 1: PLATFORM TECHNOLOGIES </td>
+          <td>IT ELECTIVE 1: PLATFORM TECHNOLOGIES</td>
           <td>3.0</td>
         </tr>
         <tr>
           <td>ITEL 2A</td>
-           <td>IT ELECTIVE 2: OBJECT-ORIENTED PROGRAMMING </td>
+          <td>IT ELECTIVE 2: OBJECT-ORIENTED PROGRAMMING</td>
           <td>3.0</td>
         </tr>
-		<tr>
+        <tr>
           <td>HIST 1</td>
-		  <td>READINGS IN PHILIPPINE HISTORY /MGA BABASAHIN HINGGIL SA KASAYSAYAN NG PILIPINAS </td>
+          <td>READINGS IN PHILIPPINE HISTORY / MGA BABASAHIN HINGGIL SA KASAYSAYAN NG PILIPINAS</td>
           <td>3.0</td>
         </tr>
         <tr>
           <td>SOC ECON 1</td>
-          <td>THE CONTEMPORARY WORLD / ANG KASALUKUYAN DAIGDIG </td>
+          <td>THE CONTEMPORARY WORLD / ANG KASALUKUYAN DAIGDIG</td>
           <td>3.0</td>
         </tr>
         <tr>
           <td>PE 3</td>
-          <td>PATH FIT 3: SPORTS (INDIVIDUAL/DUAL) </td>
+          <td>PATH FIT 3: SPORTS (INDIVIDUAL/DUAL)</td>
           <td>2.0</td>
         </tr>
       </table>
     </div>
-  
-</div>
-</div>
+  </div>
+ </div>
 <div style="text-align: center;" class="pagination">
   <a href="sub2.html" class="prev">&laquo;</a>
   <a href="subjectst.html">1</a>
-  <a  href="sub2.html">2</a>
+  <a href="sub2.html">2</a>
   <a class="active" href="sub3.html">3</a>
   <a href="sub4.html">4</a>
   <a class="next" href="sub4.html">&raquo;</a>
