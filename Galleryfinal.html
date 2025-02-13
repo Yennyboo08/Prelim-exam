@@ -32,9 +32,19 @@
   background-color: #ffffff;
   float: left;
   width: 20%;
-  color:#000000;
+  color: #000000;
   margin-top: 7px;
   text-align: left;
+}
+
+.container {
+  margin: 20px auto; /* Center the container */
+}
+
+.carousel-inner img {
+  width: 80%; /* Set the width of the images */
+  margin: 0 auto; /* Center the images */
+  display: block; /* Ensure images are block elements */
 }
 
 @media only screen and (max-width: 620px) {
@@ -52,7 +62,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-
 <div style="background-color:#AF38EB;font-family:Verdana;color:#FFFFFF;padding:15px;text-align:left;">
   <h1>Chainne Gale D. Enario</h1>
 </div>
@@ -67,70 +76,69 @@
     <a style="text-decoration:none" href="Galleryfinal.html">Gallery</a>
   </div>
 
-<div class="container">
-  <h2>My Gallery</h2>  
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
-      <li data-target="#myCarousel" data-slide-to="5"></li>
-      <li data-target="#myCarousel" data-slide-to="6"></li>
-      <li data-target="#myCarousel" data-slide-to="7"></li>
-      <li data-target="#myCarousel" data-slide-to="8"></li>
-      <li data-target="#myCarousel" data-slide-to="9"></li>
+  <div class="container">
+    <h2>My Gallery</h2>  
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+        <li data-target="#myCarousel" data-slide-to="6"></li>
+        <li data-target="#myCarousel" data-slide-to="7"></li>
+        <li data-target="#myCarousel" data-slide-to="8"></li>
+        <li data-target="#myCarousel" data-slide-to="9"></li>
+      </ol>
 
-    </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="1709633894998.jpg" alt="Picture 1">
+        </div>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="1709633894998.jpg" alt="Picture 1" style="width:100%;">
+        <div class="item">
+          <img src="1709634133195.jpg" alt="Picture 2">
+        </div>
+      
+        <div class="item">
+          <img src="1709633886428.jpg" alt="Picture 3">
+        </div>
+
+        <div class="item">
+          <img src="1709633875973.jpg" alt="Picture 4">
+        </div>
+        <div class="item">
+          <img src="1709633878212.jpg" alt="Picture 5">
+        </div>
+        <div class="item">
+          <img src="1709633906971.jpg" alt="Picture 6">
+        </div>
+        <div class="item">
+          <img src="1709634023996.jpg" alt="Picture 7">
+        </div>
+        <div class="item">
+          <img src="1709634079839.jpg" alt="Picture 8">
+        </div>
+        <div class="item">
+          <img src="1709634133195.jpg" alt="Picture 9">
+        </div>
+        <div class="item">
+          <img src="1709634118839.jpg" alt="Picture 10">
+        </div>
       </div>
 
-      <div class="item">
-        <img src="1709634133195.jpg" alt="Picture 2" style="width:100%;">
-      </div>
-    
-      <div class="item">
-        <img src="1709633886428.jpg" alt="Picture 3" style="width:100%;">
-      </div>
-
-      <div class="item">
-        <img src="1709633875973.jpg" alt="Picture 4" style="width:100%;">
-      </div>
-      <div class="item">
-        <img src="1709633878212.jpg" alt="Picture 5" style="width:100%;">
-      </div>
-      <div class="item">
-        <img src="1709633906971.jpg" alt="Picture 6" style="width:100%;">
-      </div>
-      <div class="item">
-        <img src="1709634023996.jpg" alt="Picture 6" style="width:100%;">
-      </div>
-      <div class="item">
-        <img src="1709634079839.jpg" alt="Picture 8" style="width:100%;">
-      </div>
-      <div class="item">
-        <img src="1709634133195.jpg" alt="Picture 9" style="width:100%;">
-      </div>
-      <div class="item">
-        <img src="1709634118839.jpg" alt="Picture 10" style="width:100%;">
-      </div>
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span </a>
     </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
   </div>
 </div>
 
