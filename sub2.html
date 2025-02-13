@@ -12,6 +12,7 @@
   width: 20%;
   text-align: left;
 }
+
 .footer {
   position: fixed;
   bottom: 0;
@@ -23,7 +24,6 @@
 }
 
 .pagination a {
-  position: right;
   color: black;
   display: inline-block;
   padding: 8px 16px;
@@ -38,8 +38,9 @@
   margin-top: 20px;
 }
 
-.pagination a:hover:not(.active) {background-color: #ddd;} 
-
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
 
 .menu a {
   background-color: #6ac5fe;
@@ -54,16 +55,6 @@
   float: left;
   width: 60%;
   padding: 0 5px;
-}
-
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #6ac5fe;
-  text-align: center;
-  padding: 10px;
 }
 
 table {
@@ -87,17 +78,18 @@ tr:nth-child(even) {
   float: left;
   width: 20%;
   padding: 0 10px;
-  color:#000000;
+  color: #000000;
   margin-top: 7px;
   text-align: left;
 }
 
-media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   /* For tablets: */
   .menu, .main, .right {
     width: 50%;
   }
 }
+
 @media only screen and (max-width: 600px) {
   /* For mobile phones: */
   .menu, .main, .right {
@@ -115,7 +107,7 @@ media only screen and (max-width: 900px) {
 <div style="overflow:auto;font-family:Verdana;color:#FFFFFF;">
   <div class="menu">
     <a style="text-decoration:none" href="index.html">About ME</a>
-    <a style="text-decoration:none" href="subjectst.html">Subject Taken</a>
+    <a class="active" style="text-decoration:none" href="subjectst.html">Subject Taken</a>
     <a style="text-decoration:none" href="Enrolled.html">Enrolled</a>
     <a style="text-decoration:none" href="contactme.html">Contact Me</a>
     <a style="text-decoration:none" href="favorites.html">My Favorites</a>
@@ -148,17 +140,17 @@ media only screen and (max-width: 900px) {
         </tr>
         <tr>
           <td>ITP 1</td>
-           <td>IT FUNDAMENTALS</td>
+          <td>IT FUNDAMENTALS</td>
           <td>3.0</td>
         </tr>
-		<tr>
+        <tr>
           <td>ITP 2</td>
-		  <td>DISCRETE MATHEMATICS</td>
+          <td>DISCRETE MATHEMATICS</td>
           <td>3.0</td>
         </tr>
         <tr>
           <td>PE 2</td>
-          <td>PATH FITH 2:  FITNESS TRAINING</td>
+          <td>PATH FITH 2: FITNESS TRAINING</td>
           <td>2.0</td>
         </tr>
         <tr>
@@ -168,14 +160,14 @@ media only screen and (max-width: 900px) {
         </tr>
       </table>
     </div>
-  
+  </div>
 </div>
-</div>
+
 <div style="text-align: center;" class="pagination">
   <a href="subjectst.html" class="prev">&laquo;</a>
   <a href="subjectst.html">1</a>
-  <a class="active" href="#">2</a>
-  <a href="sub3.html">3</a>
+  <a class="active" href="sub2.html">2</a>
+  <a href=" sub3.html">3</a>
   <a href="sub4.html">4</a>
   <a class="next" href="sub3.html">&raquo;</a>
 </div>
