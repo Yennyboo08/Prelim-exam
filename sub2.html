@@ -14,7 +14,7 @@
 }
 
 .footer {
-  position: fixed;
+  position: relative; /* Changed from fixed to relative */
   bottom: 0;
   left: 0;
   width: 100%;
@@ -55,6 +55,7 @@
   float: left;
   width: 60%;
   padding: 0 5px;
+  margin-bottom: 50px; /* Added margin to prevent overlap with footer */
 }
 
 table {
@@ -107,7 +108,7 @@ tr:nth-child(even) {
 <div style="overflow:auto;font-family:Verdana;color:#FFFFFF;">
   <div class="menu">
     <a style="text-decoration:none" href="index.html">About ME</a>
-    <a class="active" style="text-decoration:none" href="subjectst.html">Subject Taken</a>
+    <a style="text-decoration:none" href="subjectst.html">Subject Taken</a>
     <a style="text-decoration:none" href="Enrolled.html">Enrolled</a>
     <a style="text-decoration:none" href="contactme.html">Contact Me</a>
     <a style="text-decoration:none" href="favorites.html">My Favorites</a>
@@ -165,13 +166,13 @@ tr:nth-child(even) {
 
 <div style="text-align: center;" class="pagination">
   <a href="subjectst.html" class="prev">&laquo;</a>
-  <a href="subjectst.html">1</a>
-  <a class="active" href="sub2.html">2</a>
-  <a href=" sub3.html">3</a>
+  <a href="subject st.html">1</a>
+  <a class="active" href="#">2</a>
+  <a href="sub3.html">3</a>
   <a href="sub4.html">4</a>
   <a class="next" href="sub3.html">&raquo;</a>
 </div>
 
-<div class="footer">© 2023 - 2024 ITP4 | All Right Reserved</div>
+<div class="footer">© 2024 - 2025 ITP4 | All Right Reserved</div>
 </body>
 </html>
